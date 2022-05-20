@@ -437,7 +437,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7515553197577837315, guid: 7dc93a2acb13b5e4e81e8c46c57c46b9, type: 3}
+      propertyPath: tailPart
+      value: 
+      objectReference: {fileID: 6936563737198872167, guid: e251baf771acf824ca7c4f33ad296e41, type: 3}
+    - target: {fileID: 7515553197577837315, guid: 7dc93a2acb13b5e4e81e8c46c57c46b9, type: 3}
       propertyPath: waitTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515553197577837315, guid: 7dc93a2acb13b5e4e81e8c46c57c46b9, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 5994570076785640318, guid: f2ced7ce4b41c16439c984281d2c06ee, type: 3}
+    - target: {fileID: 7515553197577837315, guid: 7dc93a2acb13b5e4e81e8c46c57c46b9, type: 3}
+      propertyPath: timeBeforeMove
       value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7515553197577837561, guid: 7dc93a2acb13b5e4e81e8c46c57c46b9, type: 3}
