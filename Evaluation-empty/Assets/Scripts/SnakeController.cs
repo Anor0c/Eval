@@ -39,7 +39,7 @@ public class SnakeController : MonoBehaviour
         {
             var emptySpace = rb.position;
             rb.MovePosition(currentInput + emptySpace);
-            yield return null;
+            yield return new WaitForFixedUpdate();
             foreach (Transform child in tail.transform)
             {
                 var lastPosition = child.position;
@@ -72,13 +72,15 @@ public class SnakeController : MonoBehaviour
         isAlive = false;
         Instantiate(gameOverCanvas);
         var gover = gameOverCanvas.GetComponent<ScoreDisplayer>();
+        if (!gover)
+            return;
         gover.SetScore(eatenFruits);
         Destroy(tail);
         Destroy(gameObject);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!collision.CompareTag("PlayerZone"))
+        if (!collision.CompareTag("PlayZone"))
             return;
         Die();
     }

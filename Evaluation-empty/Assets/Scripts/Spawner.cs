@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour
     {
         Instantiate(fruit);
         fruit.transform.position = new Vector3(Random.Range(minSpawnPos.x, maxSpawnPos.x), Random.Range(minSpawnPos.y, maxSpawnPos.y), 0);
+        fruit.transform.position = Vector3Int.CeilToInt(fruit.transform.position);
 
     }
 }
